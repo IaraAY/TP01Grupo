@@ -5,8 +5,16 @@ using PresentacionGrupo.Models;
 namespace PresentacionGrupo.Controllers;
 public class GrupoController : Controller
 {
-    private readonly ILogger<HomeController> _logger; 
     public IActionResult Index()
+    {
+        return View();
+    }
+    public IActionResult ListaIntegrantes()
+    {
+        
+        return View();
+    }
+    public IActionResult InfoEstudiantes()
     {
         return View();
     }
