@@ -8,9 +8,9 @@ namespace PresentacionGrupo.Models
     {
         int DNI;
         string Nombre, Foto;
-        date FechaNacimiento;
+        DateTime FechaNacimiento;
         List<string> Familiares, Intereses;
-        public Integrante(int DNI, string nombre, string foto, date fechaN, List<string> familiares, List<string> intereses)
+        public Integrante(int DNI, string nombre, string foto, DateTime fechaN, List<string> familiares, List<string> intereses)
         {
             this.DNI = DNI;
             Nombre = nombre;
@@ -18,6 +18,9 @@ namespace PresentacionGrupo.Models
             FechaNacimiento = fechaN;
             Familiares = familiares;
             Intereses = intereses;
+        }
+        public string DevNombre(){
+            return Nombre;
         }
     }
 }

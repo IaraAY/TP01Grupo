@@ -4,5 +4,10 @@
 
 <div class="text-center">
     <h1 class="display-4">GRUPO</h1>
-    <p><a href="https://localhost:5001/Grupo/Index">Bautista Di Paolo</a>.</p>
+    <p><a href="http://localhost:5233/Grupo/Index">Bautista Di Paolo</a>.</p>
+    @model Integrante
+    @foreach(Integrante integrante in ViewBag.Integrantes)
+        {
+            <p>@integrante.DevNombre()</p>
+        }
 </div>

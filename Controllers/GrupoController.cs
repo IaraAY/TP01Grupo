@@ -11,7 +11,6 @@ public class GrupoController : Controller
     }
     public IActionResult ListaIntegrantes()
     {
-        
         return View();
     }
     public IActionResult InfoEstudiantes()
