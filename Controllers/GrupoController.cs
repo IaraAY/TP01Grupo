@@ -5,16 +5,15 @@ using PresentacionGrupo.Models;
 namespace PresentacionGrupo.Controllers;
 public class GrupoController : Controller
 {
-    public IActionResult Index()
+    Curso curso = new Curso();
+    public IActionResult Bauti()
     {
-        return View();
+        Integrante bauti = curso.Integrantes[50046913];
+        return View(bauti);
     }
-    public IActionResult ListaIntegrantes()
+    public IActionResult Kyara()
     {
-        return View();
-    }
-    public IActionResult InfoEstudiantes()
-    {
-        return View();
+        Integrante iara = curso.Integrantes[46982167];
+        return View(iara);
     }
 }

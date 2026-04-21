@@ -9,10 +9,11 @@ namespace PresentacionGrupo.Models
         public Dictionary<int, Integrante> Integrantes;
         public Curso()
         {
+            Integrantes = new Dictionary<int, Integrante>();
             DateTime fecha = new DateTime(2010, 01, 28);
             List<string> family = new List<string> {"Bobby", "Nico <3", "Mama de bauti", "Profe Dipa"};
             List<string> intereses = new List<string> {"67", "dibujar cosas cool", "hacer ejercicios desafiantes de programación"};
-            Integrante Bauti = new Integrante(50046913, "Bauti", "*fotoAzteka*", fecha, family, intereses);
+            Integrante Bauti = new Integrante(50046913, "Bauti", "fotoAzteka", fecha, family, intereses);
             Integrantes.Add(50046913, Bauti);
             
             fecha = new DateTime(2010, 01, 14);

@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Bautistic";
+}
+<div class="text-center">
+    <h1 class="display-4">
+    @model Integrante
+        BAUTISTA DI PAOLO. <br>
+    </h1>
+    <img src="~/imagenes/fotoAzteka.png" alt="Bauwu mii">
+    <p>
+        @Model.DevDNI() <br>
+        @Model.DevFNacimiento()
+    </p>
+</div>

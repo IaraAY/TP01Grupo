@@ -22,5 +22,12 @@ namespace PresentacionGrupo.Models
         public string DevNombre(){
             return Nombre;
         }
+        public int DevDNI(){
+            return DNI;
+        }
+        public string DevFNacimiento(){
+            return FechaNacimiento.ToString("dd/MM/yyyy");
+        }
     }
+            
 }

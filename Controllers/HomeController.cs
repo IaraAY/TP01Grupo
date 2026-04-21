@@ -16,8 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         Curso curso = new Curso();
-        ViewBag.Integrantes = curso.Integrantes;
-        return View();
+        return View(curso.Integrantes);
     }
 
     public IActionResult Privacy()

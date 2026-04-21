@@ -4,10 +4,11 @@
 
 <div class="text-center">
     <h1 class="display-4">GRUPO</h1>
-    <p><a href="http://localhost:5233/Grupo/Index">Bautista Di Paolo</a>.</p>
-    @model Integrante
-    @foreach(Integrante integrante in ViewBag.Integrantes)
+    @model Dictionary<int, Integrante>
+    @foreach(Integrante integrante in Model.Values)
         {
-            <p>@integrante.DevNombre()</p>
+            <a href="/Grupo/@integrante.DevNombre()">
+                <p>@integrante.DevNombre()</p>
+            </a>
         }
 </div>
