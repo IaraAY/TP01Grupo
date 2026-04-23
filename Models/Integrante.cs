@@ -28,6 +28,15 @@ namespace PresentacionGrupo.Models
         public string DevFNacimiento(){
             return FechaNacimiento.ToString("dd/MM/yyyy");
         }
+        public List<string> DevFamiliares(){
+            return Familiares;
+        }
+        public List<string> DevIntereses(){
+            return Intereses;
+        }
+        public string DevFoto(){
+            return Foto;
+        }
     }
             
 }

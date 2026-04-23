@@ -1,14 +1,33 @@
 @{
+    Integrante integrante = ViewBag.Integrante;
     ViewData["Title"] = "Bautistic";
 }
-<div class="text-center">
+<section class="text-center">
     <h1 class="display-4">
-    @model Integrante
         BAUTISTA DI PAOLO. <br>
     </h1>
-    <img src="~/imagenes/fotoAzteka.png" alt="Bauwu mii">
-    <p>
-        @Model.DevDNI() <br>
-        @Model.DevFNacimiento()
-    </p>
-</div>
+    <div>
+        <img src="~/imagenes/@integrante.DevFoto()" alt="Bauwu mii">
+    </div>
+    <div>
+        <h3>@integrante.DevDNI() <br>
+        @integrante.DevFNacimiento() <br>
+        </h3>
+        <h3>Familiares</h3>
+        <p>
+            <ul>
+            @foreach(string familiar in integrante.DevFamiliares()){
+                <li>@familiar</li>
+            }
+            </ul>
+        </p>
+        <h3>Intereses</h3>
+        <p>
+            <ul>
+            @foreach(string interes in integrante.DevIntereses()){
+                <li>@interes</li>
+            }
+            </ul>
+        </p>
+    </div>
+</section>

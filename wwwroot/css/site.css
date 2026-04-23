@@ -29,3 +29,21 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+section{
+  width:100%;
+}
+h1, h3{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+  font-size: 20px;
+}
+img{
+  border: 10px solid #465781;
+  width: 100%;
+}
+div{
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}

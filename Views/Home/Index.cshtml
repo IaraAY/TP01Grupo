@@ -2,7 +2,7 @@
     ViewData["Title"] = "Grupo";
 }
 
-<div class="text-center">
+<section class="text-center">
     <h1 class="display-4">GRUPO</h1>
     @model Dictionary<int, Integrante>
     @foreach(Integrante integrante in Model.Values)
@@ -11,4 +11,4 @@
                 <p>@integrante.DevNombre()</p>
             </a>
         }
-</div>
+</section>
